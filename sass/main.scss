@@ -45,7 +45,12 @@ body{
     color: $primary-color;
     text-shadow: -4px 4px 8px $secondary-color;
     #name{
-      cursor: pointer;
+      color: $primary-color;
+      text-decoration: none;
+      &:hover{
+        color: $fourth-color;
+        text-decoration: underline;
+      }
     }
   }
   .bio{
@@ -68,11 +73,32 @@ body{
       padding: 1% 1%;
       width: 50%;
       order: 2;
+      #bio-title{
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        color: $primary-color;
+        text-decoration: none;
+        &:hover{
+          color: $fourth-color;
+          text-decoration: underline;
+        }
+      }
     }
     .music{
       width: 100%;
       margin: 0 auto;
       display: flex;
     }
+  }
+  footer{
+    // margin: 1% 1%;
+    padding: 1% 1%;
+    color: $third-color;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
   }
 }

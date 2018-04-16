@@ -28,7 +28,11 @@ body {
     color: white;
     text-shadow: -4px 4px 8px black; }
     body .hero-text #name {
-      cursor: pointer; }
+      color: white;
+      text-decoration: none; }
+      body .hero-text #name:hover {
+        color: forestgreen;
+        text-decoration: underline; }
   body .bio {
     display: flex;
     flex-direction: row; }
@@ -48,9 +52,26 @@ body {
       padding: 1% 1%;
       width: 50%;
       order: 2; }
+      body .bio .bio_text #bio-title {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        color: white;
+        text-decoration: none; }
+        body .bio .bio_text #bio-title:hover {
+          color: forestgreen;
+          text-decoration: underline; }
     body .bio .music {
       width: 100%;
       margin: 0 auto;
       display: flex; }
+  body footer {
+    padding: 1% 1%;
+    color: silver;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center; }
 
 /*# sourceMappingURL=main.css.map */
