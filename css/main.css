@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @font-face {
   font-family: "Rockit";
   src: url("../typography/Rockit.eot");
@@ -5,32 +6,51 @@
   font-weight: normal;
   font-style: normal; }
 body {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
   margin: 0; }
   body .hero {
-    background: url("../images/hero.jpg") 50% no-repeat;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/hero.jpg");
     background-size: cover;
-    height: 90vh;
-    text-align: center;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
-    justify-content: center; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
   body .hero-text {
-    opacity: 0.9;
+    opacity: 0.8;
     font-family: Rockit, monospace, sans-serif;
-    font-size: 100%;
-    color: white; }
+    font-size: calc(1.5em + 5ev);
+    color: white;
+    text-shadow: -4px 4px 8px black; }
+    body .hero-text #name {
+      cursor: pointer; }
   body .bio {
     display: flex;
     flex-direction: row; }
     body .bio .bio_img {
-      background: url("../images/bio_img.jpg") 50% no-repeat;
+      position: relative;
+      background: url("../images/bio_img.jpg") no-repeat;
       background-size: cover;
-      height: 50vh;
+      height: 60vh;
       padding: 1% 1%;
       width: 50%;
       order: 1; }
     body .bio .bio_text {
+      text-align: center;
+      font-size: 1.5rem;
+      color: white;
+      position: relative;
       padding: 1% 1%;
       width: 50%;
       order: 2; }
+    body .bio .music {
+      width: 100%;
+      margin: 0 auto;
+      display: flex; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 $primary-color: white;
 $secondary-color: black;
 $third-color: silver;
 $fourth-color: forestgreen;
 $fifth-color: seagreen;
 $sixth-color: springgreen;
-$hero-height: 90vh;
+$hero-height: 100vh;
 
 @mixin font($font-family, $font-file) {
   @font-face {
@@ -20,38 +22,57 @@ $hero-height: 90vh;
 @include font('Rockit', '../typography/Rockit');
 
 body{
+  background-color: $secondary-color;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   .hero{
-    background: url('../images/hero.jpg') 50% no-repeat;
-    background-size: cover;
+    width: 100%;
     height: $hero-height;
-    text-align: center;
+    background: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
-    // align-items: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
   }
   .hero-text {
-    opacity: 0.9;
+    opacity: 0.8;
     font-family: Rockit, monospace, sans-serif;
-    font-size: 100%;
+    font-size: calc(1.5em + 5ev);
     color: $primary-color;
-    // text-shadow: 1px 1px 2px $secondary-color;
+    text-shadow: -4px 4px 8px $secondary-color;
+    #name{
+      cursor: pointer;
+    }
   }
   .bio{
     display: flex;
     flex-direction: row;
     .bio_img{
-      background: url('../images/bio_img.jpg') 50% no-repeat;
+      position: relative;
+      background: url('../images/bio_img.jpg') no-repeat;
       background-size: cover;
-      height: 50vh;
+      height: 60vh;
       padding: 1% 1%;
       width: 50%;
       order: 1;
     }
     .bio_text{
+      text-align: center;
+      font-size: 1.5rem;
+      color: $primary-color;
+      position: relative;
       padding: 1% 1%;
       width: 50%;
       order: 2;
+    }
+    .music{
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
     }
   }
 }
