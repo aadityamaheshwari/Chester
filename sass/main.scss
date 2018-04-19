@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 
 $primary-color: white;
 $secondary-color: black;
@@ -22,83 +24,47 @@ $hero-height: 100vh;
 @include font('Rockit', '../typography/Rockit');
 
 body{
-  background-color: $secondary-color;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
+  color: $primary-color !important;
+  background-color: $secondary-color !important;
   .hero{
-    width: 100%;
-    height: $hero-height;
-    background: url('../images/hero.jpg');
-    background-size: cover;
-    background-position: center;
+    font-family: Raleway;
+    background: url("../images/hero.jpg");
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .hero-text {
-    opacity: 0.8;
-    font-family: Rockit, monospace, sans-serif;
-    font-size: calc(1.5em + 5ev);
-    color: $primary-color;
-    text-shadow: -4px 4px 8px $secondary-color;
-    #name{
-      color: $primary-color;
-      text-decoration: none;
-      &:hover{
-        color: $fourth-color;
-        text-decoration: underline;
+    background-position: center;
+    background-size: cover;
+    height: $hero-height;
+    .hero-text{
+      margin: 0 auto;
+      #name{
+        color: $primary-color;
+        &:hover{
+          color: $fourth-color;
+        }
+      }
+      #date{
+        color: $primary-color;
       }
     }
   }
   .bio{
-    display: flex;
-    flex-direction: row;
-    .bio_img{
-      position: relative;
-      background: url('../images/bio_img.jpg') no-repeat;
+    .bio-img{
+      background: url("../images/bio_img.jpg") no-repeat;
+      background-position: center;
       background-size: cover;
-      height: 60vh;
-      padding: 1% 1%;
-      width: 50%;
-      order: 1;
+      height: $hero-height;
     }
-    .bio_text{
-      text-align: center;
-      font-size: 1.5rem;
-      color: $primary-color;
-      position: relative;
-      padding: 1% 1%;
-      width: 50%;
-      order: 2;
+    .bio-text{
       #bio-title{
-        display: block;
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
         color: $primary-color;
-        text-decoration: none;
+        font-family: Raleway;
         &:hover{
           color: $fourth-color;
-          text-decoration: underline;
         }
       }
+      #lyrics{
+        font-family: Roboto;
+        font-size: 1.5rem;
+      }
     }
-    .music{
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-    }
-  }
-  footer{
-    // margin: 1% 1%;
-    padding: 1% 1%;
-    color: $third-color;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
   }
 }
