@@ -47,6 +47,7 @@ body{
     }
   }
   .bio{
+    padding: 1% 1%;
     .bio-img{
       background: url("../images/bio_img.jpg") no-repeat;
       background-position: center;
@@ -64,6 +65,29 @@ body{
       #lyrics{
         font-family: Roboto;
         font-size: 1.5rem;
+      }
+    }
+  }
+  .timeline{
+    padding: 1% 1%;
+    h2{
+      font-family: Raleway;
+    }
+    #letter{
+      padding: 0 25%;
+    }
+    a{
+      color: $fourth-color;
+    }
+  }
+  .footer{
+    border-top: 1px solid $third-color;
+    padding: 1% 1%;
+    color: $third-color;
+    a{
+      color: $third-color;
+      &:hover{
+        color: $fourth-color;
       }
     }
   }

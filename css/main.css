@@ -24,18 +24,36 @@ body {
           color: forestgreen; }
       body .hero .hero-text #date {
         color: white; }
-  body .bio .bio-img {
-    background: url("../images/bio_img.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh; }
-  body .bio .bio-text #bio-title {
-    color: white;
-    font-family: Raleway; }
-    body .bio .bio-text #bio-title:hover {
+  body .bio {
+    padding: 1% 1%; }
+    body .bio .bio-img {
+      background: url("../images/bio_img.jpg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh; }
+    body .bio .bio-text #bio-title {
+      color: white;
+      font-family: Raleway; }
+      body .bio .bio-text #bio-title:hover {
+        color: forestgreen; }
+    body .bio .bio-text #lyrics {
+      font-family: Roboto;
+      font-size: 1.5rem; }
+  body .timeline {
+    padding: 1% 1%; }
+    body .timeline h2 {
+      font-family: Raleway; }
+    body .timeline #letter {
+      padding: 0 25%; }
+    body .timeline a {
       color: forestgreen; }
-  body .bio .bio-text #lyrics {
-    font-family: Roboto;
-    font-size: 1.5rem; }
+  body .footer {
+    border-top: 1px solid silver;
+    padding: 1% 1%;
+    color: silver; }
+    body .footer a {
+      color: silver; }
+      body .footer a:hover {
+        color: forestgreen; }
 
 /*# sourceMappingURL=main.css.map */
